@@ -1,0 +1,19 @@
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  
+  > #page {
+    width: 800px;
+    border: 1px solid #eee;
+    padding: 10px;
+    
+    p.section-title {
+      font-size: 20px;
+      text-align: center;
+    }
+    p.section-content {
+      font-size: 12px;
+      color: #999;
+    }
+  }
+}

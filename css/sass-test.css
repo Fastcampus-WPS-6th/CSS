@@ -1,0 +1,20 @@
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.container > #page {
+  width: 800px;
+  border: 1px solid #eee;
+  padding: 10px;
+}
+
+.container > #page p.section-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.container > #page p.section-content {
+  font-size: 12px;
+  color: #999;
+}

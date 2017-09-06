@@ -1,0 +1,33 @@
+div {
+  padding: 10px;
+  border: 1px solid black;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+div.relative1 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+div.relative2 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: 50px;
+}
+div.absolute {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+div.fixed {
+  position: fixed;
+  background-color: blue;
+  bottom: 10px;
+  right: 10px;
+}
+
+div.large {
+  width: 300px;
+  height: 1000px;
+}

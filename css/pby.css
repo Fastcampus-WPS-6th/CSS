@@ -1,7 +1,68 @@
 html, body {
   font-size: 14px;
+  line-height: 1.5;
 }
+
 a {
   text-decoration: none;
   color: #0275d8;
+}
+
+blockquote {
+  border: 2px dashed #ccc;
+  border-left: 5px solid green;
+  padding: 10px;
+  margin: 0;
+}
+
+.created-date {
+  text-align: right;
+}
+
+.link-reference {
+  margin-bottom: 10px;
+}
+
+.link-reference .img-link {
+  height: 22px;
+}
+
+.link-reference > * {
+  vertical-align: middle;
+}
+
+.table-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.table-wrapper table.info {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #b38b6e;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.table-wrapper table.info tr > td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-wrapper table.info tr > td {
+  white-space: pre-line;
+}
+
+.table-wrapper table.info tr > td:nth-of-type(1) {
+  background-color: #b38b6e;
+  color: white;
+  font-weight: bold;
+}
+
+.table-wrapper table.info tr > td.td-img {
+  background-color: #f5f5f5;
+}
+
+.table-wrapper table.info img {
+  max-width: 100%;
 }

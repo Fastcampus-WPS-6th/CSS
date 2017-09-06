@@ -1,0 +1,40 @@
+$color-text-anchor: #585858;
+$length-header-height: 61px;
+html, body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: $color-text-anchor;
+}
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header.top-header {
+  height: $length-header-height;
+  background-color: #fdd; 
+  
+  > nav {
+    > .header-menu {
+      li {
+        float: left;
+      }
+      
+      &.header-menu-left {
+        float: left;
+      }
+      &.header-menu-right {
+        float: right;
+        
+        > .right-sub-menu {
+          float: left;
+        }
+      }
+    }
+  }
+}
+

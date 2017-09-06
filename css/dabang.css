@@ -1,0 +1,36 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #585858;
+}
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header.top-header {
+  height: 61px;
+  background-color: #fdd;
+}
+
+header.top-header > nav > .header-menu li {
+  float: left;
+}
+
+header.top-header > nav > .header-menu.header-menu-left {
+  float: left;
+}
+
+header.top-header > nav > .header-menu.header-menu-right {
+  float: right;
+}
+
+header.top-header > nav > .header-menu.header-menu-right > .right-sub-menu {
+  float: left;
+}

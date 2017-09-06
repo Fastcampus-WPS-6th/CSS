@@ -16,21 +16,54 @@ ul, ol {
 
 header.top-header {
   height: 61px;
-  background-color: #fdd;
+  border-bottom: 1px solid #eee;
+}
+
+header.top-header > nav {
+  height: 61px;
+}
+
+header.top-header > nav > .header-menu {
+  height: 61px;
 }
 
 header.top-header > nav > .header-menu li {
+  height: 61px;
+  line-height: 61px;
   float: left;
+}
+
+header.top-header > nav > .header-menu li .img-logo {
+  margin-left: 20px;
+  margin-top: 16px;
+  margin-right: 20px;
+}
+
+header.top-header > nav > .header-menu li > a {
+  height: 61px;
+  display: inline-block;
 }
 
 header.top-header > nav > .header-menu.header-menu-left {
   float: left;
 }
 
+header.top-header > nav > .header-menu.header-menu-left li {
+  padding: 0 8px;
+}
+
 header.top-header > nav > .header-menu.header-menu-right {
   float: right;
 }
 
+header.top-header > nav > .header-menu.header-menu-right li > a {
+  padding: 0 8px;
+}
+
 header.top-header > nav > .header-menu.header-menu-right > .right-sub-menu {
   float: left;
+}
+
+header.top-header > nav > .header-menu.header-menu-right > .header-right-menu1 {
+  margin-right: 20px;
 }

@@ -16,22 +16,59 @@ ul, ol {
 
 header.top-header {
   height: $length-header-height;
-  background-color: #fdd; 
+  border-bottom: 1px solid #eee;
   
+  // 하위 nav, .header-menu, li, li > a 요소가 전부 같은 height를 갖도록 함
   > nav {
+    height: $length-header-height;
     > .header-menu {
+      height: $length-header-height;
+      
+      // ListItem들은 float: left속성으로 가로정렬
+      // line-height와 height를 같게하여 수직 중앙 정렬
       li {
+        height: $length-header-height;
+        line-height: $length-header-height;
         float: left;
+        
+        // 로고 이미지 위치는 수동으로 조절
+        .img-logo {
+          margin-left: 20px;
+          margin-top: 16px;
+          margin-right: 20px;
+        }
+        
+        // li의 자식 요소인 a들은 height값을 가지며, 
+        // a요소는 원래 inline이므로 높이값을 갖기 위해 display속성을 inline-block으로 변경
+        > a {
+          height: $length-header-height;
+          display: inline-block;
+        }
       }
       
+      // .header-menu.header-menu-left는 float: left
       &.header-menu-left {
         float: left;
+        
+        // 좌측 메뉴의 아이템들은 각각 좌우 패딩을 8px씩 가짐
+        li {
+          padding: 0 8px;
+        }
       }
+      // .header-menu.header-menu-right는 float: right
       &.header-menu-right {
         float: right;
         
+        // 우측메뉴의 아이템들은 각각 좌우 패딩을 8px씩 가짐
+        li > a {
+          padding: 0 8px;
+        }
+        
         > .right-sub-menu {
           float: left;
+        }
+        > .header-right-menu1 {
+          margin-right: 20px;
         }
       }
     }

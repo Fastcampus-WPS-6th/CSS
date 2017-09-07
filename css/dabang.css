@@ -169,6 +169,7 @@ header.top-header > nav > .header-menu.header-menu-right > .header-right-menu1 {
   float: left;
   box-sizing: border-box;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 
 .theme-search-container .theme-list .theme-item:nth-of-type(3n-1) {
@@ -191,6 +192,7 @@ header.top-header > nav > .header-menu.header-menu-right > .header-right-menu1 {
 
 .theme-search-container .theme-list .theme-item > a > .img-bg {
   height: 100%;
+  transition-duration: 0.4s;
 }
 
 .theme-search-container .theme-list .theme-item > a > .img-bg.pet {
@@ -233,4 +235,8 @@ header.top-header > nav > .header-menu.header-menu-right > .header-right-menu1 {
 
 .theme-search-container .theme-list .theme-item > a > .text-container > hr.theme-item-line {
   width: 20%;
+}
+
+.theme-search-container .theme-list .theme-item > a:hover > .img-bg {
+  transform: scale(1.1);
 }

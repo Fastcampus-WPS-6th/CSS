@@ -14,6 +14,13 @@ ul, ol {
   margin: 0;
 }
 
+.clearfix::after {
+  content: '';
+  height: 0;
+  display: block;
+  clear: both;
+}
+
 header.top-header {
   height: 61px;
   border-bottom: 1px solid #eee;
@@ -143,10 +150,29 @@ header.top-header > nav > .header-menu.header-menu-right > .header-right-menu1 {
   transition-duration: 0.1s;
 }
 
-.main-search-container > .input-container > button:focus {
-  outline: none;
-}
-
 .main-search-container > .input-container > button:hover {
   background-color: #2074c8;
+}
+
+.theme-search-container {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fcc;
+}
+
+.theme-search-container > header {
+  text-align: center;
+}
+
+.theme-search-container .theme-list .theme-item {
+  width: 300px;
+  height: 300px;
+  float: left;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.theme-search-container .theme-list .theme-item:nth-of-type(3n-1) {
+  margin: 0 30px;
 }

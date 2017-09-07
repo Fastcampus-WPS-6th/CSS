@@ -157,7 +157,6 @@ header.top-header > nav > .header-menu.header-menu-right > .header-right-menu1 {
 .theme-search-container {
   width: 960px;
   margin: 0 auto;
-  background-color: #fcc;
 }
 
 .theme-search-container > header {
@@ -168,11 +167,70 @@ header.top-header > nav > .header-menu.header-menu-right > .header-right-menu1 {
   width: 300px;
   height: 300px;
   float: left;
-  border: 1px solid black;
   box-sizing: border-box;
   margin-bottom: 30px;
 }
 
 .theme-search-container .theme-list .theme-item:nth-of-type(3n-1) {
   margin: 0 30px;
+}
+
+.theme-search-container .theme-list .theme-item > a {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.theme-search-container .theme-list .theme-item > a > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.theme-search-container .theme-list .theme-item > a > .img-bg {
+  height: 100%;
+}
+
+.theme-search-container .theme-list .theme-item > a > .img-bg.pet {
+  background-image: url("../images/pet.jpg");
+}
+
+.theme-search-container .theme-list .theme-item > a > .img-bg.officetel {
+  background-image: url("../images/officetel.jpg");
+}
+
+.theme-search-container .theme-list .theme-item > a > .img-bg.pano {
+  background-image: url("../images/pano.jpg");
+}
+
+.theme-search-container .theme-list .theme-item > a > .img-bg.parking {
+  background-image: url("../images/parking.jpg");
+}
+
+.theme-search-container .theme-list .theme-item > a > .img-bg.guarantee {
+  background-image: url("../images/guarantee.jpg");
+}
+
+.theme-search-container .theme-list .theme-item > a > .img-bg.direct {
+  background-image: url("../images/direct.jpg");
+}
+
+.theme-search-container .theme-list .theme-item > a > .mask {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.theme-search-container .theme-list .theme-item > a > .text-container {
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 10%;
+  box-sizing: border-box;
+}
+
+.theme-search-container .theme-list .theme-item > a > .text-container > hr.theme-item-line {
+  width: 20%;
 }

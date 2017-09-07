@@ -1,5 +1,7 @@
 $color-text-anchor: #585858;
 $color-bg-main-search: #cbd5c4;
+$color-bg-main-search-btn: #3b8de0;
+$color-bg-main-search-btn-hover: #2074c8;
 $length-header-height: 61px;
 
 html, body {
@@ -128,9 +130,28 @@ header.top-header {
     }
     > input {
       width: 434px;
+      padding: 0 20px;
+      font-size: 14px;
+      line-height: 50px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
     }
     > button {
       width: 100px;
+      font-size: 15px;
+      background-color: $color-bg-main-search-btn;
+      color: white;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      cursor: pointer;
+      transition-duration: 0.1s;
+      
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background-color: $color-bg-main-search-btn-hover;
+      }
     }
   }
 }

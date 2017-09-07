@@ -227,13 +227,18 @@ header.top-header > nav > .header-menu.header-menu-right > .header-right-menu1 {
 .theme-search-container .theme-list .theme-item > a > .text-container {
   color: white;
   text-align: center;
-  top: 50%;
-  transform: translateY(-50%);
   padding: 0 10%;
   box-sizing: border-box;
+  display: table;
+  height: 100%;
 }
 
-.theme-search-container .theme-list .theme-item > a > .text-container > hr.theme-item-line {
+.theme-search-container .theme-list .theme-item > a > .text-container > .cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.theme-search-container .theme-list .theme-item > a > .text-container > .cell > hr.theme-item-line {
   width: 20%;
 }
 

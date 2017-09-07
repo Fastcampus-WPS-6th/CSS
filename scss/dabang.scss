@@ -227,14 +227,33 @@ header.top-header {
         > .text-container {
           color: white;
           text-align: center;
-          top: 50%;
-          transform: translateY(-50%);
+          
           padding: 0 10%;
           box-sizing: border-box;
           
-          > hr.theme-item-line {
-            width: 20%;
+          // top과 transform을 사용해 vertical-align middle조정
+          // top: 50%;
+          // transform: translateY(-50%);
+          
+          // display: table과 하위요소를 table-cell로 조정하여 vertical-align middle조정
+          display: table;
+          // height: 100%는 table로 display속성을 정할때만 필요
+          height: 100%;
+          
+          > .cell {
+            // 부모요소의 display속성이 table일 경우, 
+            // 하위요소가 table-cell display속성을 가지며 
+            // vertical-align: middle인 경우 
+            // 부모요소에 맞추어 자식요소의 상하에 
+            // 동일한 크기의 패딩이 생성되어 수직중앙정렬이 된다.
+            display: table-cell;
+            vertical-align: middle;
+            
+            > hr.theme-item-line {
+              width: 20%;
+            }  
           }
+          
         }
         
         &:hover {

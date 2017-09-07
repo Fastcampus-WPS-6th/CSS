@@ -96,3 +96,37 @@ header.top-header > nav > .header-menu.header-menu-right > .header-right-menu1 {
   background-repeat: no-repeat;
   background-position: center bottom;
 }
+
+.main-search-container > .input-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main-search-container > .input-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 110px;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.main-search-container > .input-container > input, .main-search-container > .input-container button {
+  float: left;
+  height: 50px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.main-search-container > .input-container > input {
+  width: 434px;
+}
+
+.main-search-container > .input-container > button {
+  width: 100px;
+}

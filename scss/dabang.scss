@@ -2,6 +2,7 @@ $color-text-anchor: #585858;
 $color-bg-main-search: #cbd5c4;
 $color-bg-main-search-btn: #3b8de0;
 $color-bg-main-search-btn-hover: #2074c8;
+$color-bg-banner-event-1: #266bc2;
 $length-header-height: 61px;
 
 html, body {
@@ -199,7 +200,7 @@ header.top-header {
         }
         > .img-bg {
           height: 100%;
-          transition-duration: 0.4s;
+          transition-duration: transform 0.3s, opacity 0;
           
           &.pet {
             background-image: url('../images/pet.jpg');
@@ -259,9 +260,35 @@ header.top-header {
         &:hover {
           > .img-bg {
             transform: scale(1.1);  
+            opacity: 0.6;
           }
           
           
+        }
+      }
+    }
+  }
+}
+
+.banner-container {
+  ul.banner-list {
+    li {
+      height: 100px;
+      &.event1 {
+        background-color: $color-bg-banner-event-1;
+      }
+      > a {
+        display: block;
+        height: 100%;
+        
+        > .banner-img {
+          height: 100%;
+          background-position: center center;
+          background-repeat: no-repeat;
+          
+          &.event1 {
+            background-image: url('../images/event.png');
+          }
         }
       }
     }

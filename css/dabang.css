@@ -192,7 +192,7 @@ header.top-header > nav > .header-menu.header-menu-right > .header-right-menu1 {
 
 .theme-search-container .theme-list .theme-item > a > .img-bg {
   height: 100%;
-  transition-duration: 0.4s;
+  transition-duration: transform 0.3s, opacity 0;
 }
 
 .theme-search-container .theme-list .theme-item > a > .img-bg.pet {
@@ -244,4 +244,28 @@ header.top-header > nav > .header-menu.header-menu-right > .header-right-menu1 {
 
 .theme-search-container .theme-list .theme-item > a:hover > .img-bg {
   transform: scale(1.1);
+  opacity: 0.6;
+}
+
+.banner-container ul.banner-list li {
+  height: 100px;
+}
+
+.banner-container ul.banner-list li.event1 {
+  background-color: #266bc2;
+}
+
+.banner-container ul.banner-list li > a {
+  display: block;
+  height: 100%;
+}
+
+.banner-container ul.banner-list li > a > .banner-img {
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.banner-container ul.banner-list li > a > .banner-img.event1 {
+  background-image: url("../images/event.png");
 }

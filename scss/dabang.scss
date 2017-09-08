@@ -3,6 +3,7 @@ $color-bg-main-search: #cbd5c4;
 $color-bg-main-search-btn: #3b8de0;
 $color-bg-main-search-btn-hover: #2074c8;
 $color-bg-banner-event-1: #266bc2;
+$color-bg-footer: #2a2a2a;
 $length-header-height: 61px;
 
 html, body {
@@ -341,6 +342,45 @@ header.top-header {
         width: 100%;
         height: 100%;
         display: block;
+      }
+    }
+  }
+}
+footer {
+  background-color: $color-bg-footer;
+  padding-top: 93px;
+  padding-bottom: 63px;
+  
+  > .container {
+    font-size: 0;
+    > * {
+      font-size: 13px;
+      display: inline-block;
+      vertical-align: bottom;
+      margin: 0;
+      color: #919191;
+      box-sizing: border-box;
+      white-space: pre-line;
+      line-height: 1.5;
+      
+      b {
+        color: white;
+      }
+      
+      &:nth-child(1) {
+        margin-right: 45px;
+        padding-bottom: 20px;
+      }
+      &:nth-child(2) {
+        width: 288px;
+        padding-right: 10px;
+      }
+      &:nth-child(3) {
+        width: 323px;
+        padding-right: 10px;
+      }
+      &:nth-child(4) {
+        width: 196px;
       }
     }
   }

@@ -320,3 +320,47 @@ header.top-header > nav > .header-menu.header-menu-right > .header-right-menu1 {
   height: 100%;
   display: block;
 }
+
+footer {
+  background-color: #2a2a2a;
+  padding-top: 93px;
+  padding-bottom: 63px;
+}
+
+footer > .container {
+  font-size: 0;
+}
+
+footer > .container > * {
+  font-size: 13px;
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 0;
+  color: #919191;
+  box-sizing: border-box;
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
+footer > .container > * b {
+  color: white;
+}
+
+footer > .container > *:nth-child(1) {
+  margin-right: 45px;
+  padding-bottom: 20px;
+}
+
+footer > .container > *:nth-child(2) {
+  width: 288px;
+  padding-right: 10px;
+}
+
+footer > .container > *:nth-child(3) {
+  width: 323px;
+  padding-right: 10px;
+}
+
+footer > .container > *:nth-child(4) {
+  width: 196px;
+}
